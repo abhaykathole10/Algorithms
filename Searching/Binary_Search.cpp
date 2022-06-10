@@ -41,6 +41,7 @@ int main(){
 
     return 0;
 }
+
 /*
 Also called "Divide and Conquer Algorithm"
 Array should be "Sorted"
