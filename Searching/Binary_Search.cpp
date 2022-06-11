@@ -1,4 +1,4 @@
-//BINARY SEARCH ALGORITHM
+//BINARY SEARCH ALGORITHM C++
 #include <iostream>
 using namespace std;
 
@@ -14,9 +14,11 @@ int binarySearch(int a[], int beg, int end, int val){
         }
         else if(val < a[mid]){
             end = mid-1;
+            //Recurrsion
             return binarySearch(a, beg, end, val);
         }
         else{
+            //Recurrsion
             return binarySearch(a, mid+1, end, val);
         }
     }
@@ -44,7 +46,7 @@ int main(){
 }
 
 /*
-Also called "Divide and Conquer Algorithm"
+Also called "Decrease and Conquer Algorithm"
 Array should be "Sorted"
 Worst case time complexity is O(log n)
 */
