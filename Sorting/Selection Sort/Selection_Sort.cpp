@@ -26,7 +26,7 @@ void SelectionSort(int A[], int n){
 }
 
 int main(){
-    int A[10] = {3,6,1,8,4,9,5,7,2};
+    int A[] = {3,6,1,8,4,9,5,7,2};
     int n = sizeof(A)/sizeof(A[0]);
 
     //Traversing the array
