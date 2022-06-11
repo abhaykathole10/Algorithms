@@ -73,9 +73,13 @@ void MergeSort(int A[], int start, int end){
 
         int mid = (start + end) / 2;
 
+        //Using recursion to make the subarray with just "one" element
+        //As we don't already have sorted array we will have to start merge with single elements
+        //As we know single element is already sorted, we will get sorted array gradually
         MergeSort(A, start, mid);
         MergeSort(A, mid + 1, end);
 
+        //Applying merge procedure
         merge(A, start, mid, end);
     }
 
